@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/index.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Weather App by MartaPatrycja</title>
+  </head>
+  <body>
+    <div style="width: 32rem;" class="container">
+
+    
+        <div class="row d-flex justify-content-between">
+          <div class="col-9"><h2 id="year-top">Thursday</h2></div>
+          <div class="col-3"><h2 id="hour-top">22:43</h2></div>
+          <div>
+      
+          <div class="row d-flex justify-content-between">
+              <div class="col-9"><h1 class="card-city" id="city">Łódź</h1></div>
+              <div class="col-3"><h3 class="card-country" id="country">Poland</h3></div>
+                      </div>
+            
+        <div class="row d-flex justify-content-between">
+            <div class="formular" id="serach-form">
+              <form id="cities-buttons">
+                <div class="row">
+                  <div class="col-5">
+                  <input
+                    type="text"
+                    placeholder="🔎 Search"
+                    id="form-city-text"
+                    autofocus="on"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Change city"
+                    class="form-city-button"
+      
+                  />
+                  </div>
+                  <div class="col-3">
+                  <input
+                    type="button"
+                    value="Current city"
+                    class="current-city-button"
+                    id="current-city-button"
+                  />
+                </div>
+              </form>
+            </div>
+            </div>
+          
+            
+              <div class="padding-icon d-flex justify-content-between">
+                    <ul class="changing-weather">
+                      <li><img
+                        src=""
+                        class="img-weather-big"
+                        alt="sunny"
+                        id="icon"
+                      /></li>
+                    <li id="temperature">19</li>
+                    <li id="celsius">°C</li>
+                    <li id="weather-change">cloudiness</li>
+                     </ul>
+            </div>
+                
+                      <ul class="additional-parameters">
+                      <li>Wind: <span id="wind"></span> km/h</li>
+                      <li>Humidity: <span id="humidity"></span>%</li>
+                      <li>Pressure: <span id="pressure"></span> hPa</li>
+                            </ul>
+                          </div>
+                        </div>
+       
+    <h4>HOURLY</h4>
+        
+    <div class="weather-forecast" id="forecast-hourly">
+      
+      
+
+      <div class="row">
+        <div class="col-2">
+          
+            <div class="card-body-hourly d-flex justify-content-between">
+              <h5 class="card-title-hourly">11:00</h5>
+              <h5 class="temperatures-hourly"><span class="hourly-temperature">19°</span></h5>
+              <img
+                src="vector-images/Sun_Outline.svg"
+                class="img-weather-small"
+                alt="sunny"
+              />
+            </div>
+          </div>
+        </div>
+       </div> 
+       <h4>DAILY</h4>
+    <div class="weather-forecast"  id="forecast-daily">
+      
+      <div class="row">
+        <div class="col-2">
+          
+            <div class="card-body-daily d-flex justify-content-between">
+              <h5 class="card-title-daily">FRI</h5>
+              <h5 class="temperatures-daily"><span class="daily-temperature-max">19°</span> <span class="daily-temperature-min">10°</span></h5>
+              <img
+                src="vector-images/Cloudy_Outline.svg"
+                class="img-weather-small"
+                alt="cloudy"
+              />
+            </div>
+          </div>
+        </div>
+        </div>
+        <a href="https://github.com/MartaPatrycja/WeatherApp-MartaPatrycja" target="_blank">open-source code by MartaPatrycja</a>
+    </div>
+    </div>
+  </div>
+</div>
+    </body>
+   
+    <script src="src/index.js"></script>
+  </body>
+</html>
